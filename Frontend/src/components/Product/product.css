@@ -1,0 +1,47 @@
+.dummy-container {
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dummy-card {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+    .dummy-card {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .dummy-card {
+        flex-basis: 33.33%;
+    }
+}
+
+@media (min-width: 992px) {
+    .dummy-card {
+        flex-basis: 25%;
+    }
+}
+
+.card-image {
+    height: 200px;
+    object-fit: contain;
+}
+
+.card-description {
+    max-height: 100px;
+    overflow: auto;
+}
+
+@media (max-width: 767px) {
+    .card-image {
+        height: 150px;
+    }
+}
